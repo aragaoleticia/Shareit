@@ -9,7 +9,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
-        <GoogleOAuthProvider clientId="301398139156-l34njtshd4eumarc3lc100orep5ig3pt.apps.googleusercontent.com">
+        <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}>
             <App/>
         </GoogleOAuthProvider>
     </Router>
